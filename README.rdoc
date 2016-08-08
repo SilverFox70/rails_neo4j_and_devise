@@ -24,6 +24,18 @@ always be sure to also shut down the Neo4j server when you exit out of rails.
 
 <tt>rake neo4j:stop</tt>
 
+Should you forget to do this and find yourself using <tt>kill -9</tt> to stop
+the process, you may find that you cannot restart the server due to error something
+like the following:
+
+<tt>db/neo4j/development/run/neo4j.pid: No such file or directory
+rake aborted!
+Unable to run: db/neo4j/development/bin/neo4j start</tt>
+
+You will then need to navigate down into the development directory where you will find 
+there is no "run" directory.  Go ahead and <tt>mkdir run</tt>, <tt>cd dun</tt> and finally
+<tt>touch neo4j.pid</tt>. You should be able to start the neo4j server again. 
+
 === Building an app from here
 
 Scaffolding is a quick way to generate resources:
