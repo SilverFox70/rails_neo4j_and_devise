@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'railties', '= 5.2.3'
+gem 'railties', '7.0.4.1'
 
-gem 'activemodel', '= 5.2.3'
+gem 'activemodel', '7.0.4.1'
 
-gem 'activesupport', '= 5.2.3'
+gem 'activesupport', '7.0.4.1'
 
 gem 'coffee-rails', '~> 5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2', '>= 5.2.3'
+gem 'rails', '~> 7.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
